@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* global.css */
+.fancy-text {
+  background: black;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-end {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-term {
+  text-align: center;
+  margin-left: 35px;
+  margin-right: 35px;
+}
