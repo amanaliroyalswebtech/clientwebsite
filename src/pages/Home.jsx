@@ -7,12 +7,12 @@ import img3 from "/src/assets/rwtlogo.png"
 
 const Home = () => {
   const services = [
-    { name: 'Finance', icon: <FaMoneyBillWave />, link: '/'},
-    { name: 'Sales', icon: <FaChartLine />, link: '/'},
-    { name: 'Marketing', icon: <FaBullhorn />, link: '/'},
-    { name: 'Accounting', icon: <FaCalculator />, link: '/'},
-    { name: 'Quality', icon: <FaCheckCircle />, link: '/'},
-    { name: 'Purchase', icon: <FaShoppingCart />, link: '/'},
+    { name: 'Inventory Management System', icon: <FaMoneyBillWave />, link:'https://dharoharvintagestore.com/'},
+    { name: 'Hotel Management System', icon: <FaChartLine />, link: 'https://resturant-application-react.vercel.app/1/6'},
+    { name: 'Petrol Management System', icon: <FaBullhorn />, link: 'https://marwah-petrol-pump.vercel.app/'},
+    { name: 'Club Management System', icon: <FaCalculator />, link: 'https://sahas-phi.vercel.app/'},
+    { name: 'College Management System', icon: <FaCheckCircle />, link: '/src/College.jsx'},
+    { name: 'Vendor Management System', icon: <FaShoppingCart />, link: '/src/Vendor.jsx'},
   ];
 
   return (
@@ -28,7 +28,7 @@ const Home = () => {
 
     {/* RWT Logo in the center */}
     <div className="flex justify-center">
-      <img src={img3} alt="Business Platform" className="h-16 w-16 md:h-60 md:w-60 object-contain rounded-md" /> {/* Reduced size */}
+      <img src={img3} alt="Business Platform" className="h-20 w-20 md:h-60 md:w-60 object-contain rounded-md" /> {/* Reduced size */}
     </div>
 
     {/* Logo2 on the right */}
@@ -65,13 +65,14 @@ const Home = () => {
             rel="noopener noreferrer"  // Optional: security best practice
           >
             <div className="text-3xl text-indigo-500 mb-1">{service.icon}</div>
-            <h3 className="text-sm font-semibold text-gray-800 mb-1 text-center truncate">{service.name}</h3>
+            <h3 className="text-xs md:text-sm font-semibold text-gray-800 mb-1 text-center break-words">{service.name}</h3> {/* Reduced font size and allowed line breaks */}
           </a>
         ))}
       </div>
     </div>
   </div>
 </section>
+
 
       {/* Why Choose Us Section */}
       <section className="py-16 bg-gray-50">
