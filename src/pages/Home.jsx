@@ -11,8 +11,8 @@ const Home = () => {
     { name: 'Club Management System', icon: <FaCalculator />, link: 'https://sahas-phi.vercel.app/'},
     { name: 'Petrol Management System', icon: <FaBullhorn />, link: 'https://marwah-petrol-pump.vercel.app/'},
     { name: 'Hotel Management System', icon: <FaChartLine />, link: 'https://resturant-application-react.vercel.app/1/6'},
-    { name: 'College Management System', icon: <FaCheckCircle />, link: '/src/College.jsx'},
-    { name: 'Vendor Management System', icon: <FaShoppingCart />, link: '/src/Vendor.jsx'},
+    { name: 'College Management System', icon: <FaCheckCircle />, link: '/src/pages/College.jsx'},
+    { name: 'Vendor Management System', icon: <FaShoppingCart />, link: '/src/pages/Vendor.jsx'},
   ];
 
   return (

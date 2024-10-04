@@ -35,7 +35,7 @@ function Footer() {
           <h2 className="text-2xl font-bold mb-2">Get Involved</h2>
           <div className="w-36 h-1 border-b-2 border-yellow-400 rounded-md mb-4"></div>
           <div className="space-y-2">
-            <a href="/" className="block hover:text-yellow-400 cursor-pointer">Donate</a>
+            <a href="/" className="block hover:text-yellow-400 cursor-pointer">Clients</a>
             <a href="/" className="block hover:text-yellow-400 cursor-pointer">Careers</a>
             <a href="/" className="block hover:text-yellow-400 cursor-pointer">Partnerships</a>
           </div>
