@@ -1,27 +1,37 @@
+import React from 'react';
+import rwtlogo from '../assets/rwtlogo.png'; // Adjust path based on your folder structure
+
 function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto flex flex-col md:flex-row md:justify-between p-12">
+    <footer className="bg-white text-gray-900"> {/* Change bg-white to cream or pista if needed */}
+      <div className="container mx-auto flex flex-col md:flex-row md:justify-between p-8"> {/* Reduced padding */}
+        
+        {/* Top left with Logo */}
         <div className="mb-8 md:mb-0">
-          <p className="hover:text-yellow-400 cursor-pointer">
-            Email us: <a href="mailto:contact@royalswebtech.com" className="hover:text-yellow-400">contact@royalswebtech.com</a>
-          </p>
+          {/* Add your logo at the top left */}
+          <a href = "https://www.nexuxrise.com/">
+          <img src={rwtlogo} alt="RWT Logo" className="w-32 h-auto mb-2" /> </a>
           
-          <h2 className='mt-12'>Address</h2>
-          <div className="w-16 h-1 border-b-2 border-yellow-400 rounded-md mb-4"></div>
-          
-          <p>Royals WebTech,<br /> Nagpur, Maharashtra 440001</p>
 
-          {/* This will be shown on larger screens */}
-          <div className="hidden md:block mt-4">
-            {/* <p>Designed and Developed by <br />© Royals Webtech Pvt.Ltd. 2024</p> */}
-          </div>
+          <p className="hover:text-yellow-400 cursor-pointer">
+            Email us: <a href="mailto:Sales@plotus.co.in" className="hover:text-yellow-400">Sales@plotus.co.in</a>
+          </p>
+
+          <p className="hover:text-yellow-400 cursor-pointer">
+          Website:<a href="https://www.nexuxrise.com/" className="hover:text-yellow-400">https://www.nexuxrise.com</a>
+          </p>
+
+
+          <h2 className='mt-6'>Address</h2> {/* Reduced margin */}
+          <div className="w-16 h-1 border-b-2 border-yellow-400 rounded-md mb-4"></div>
+          <p>NEXUX,<br /> KALMANA TALUKA WANI 445304</p>
 
           <i className="fa-solid fa-building text-5xl mt-4"></i>
         </div>
 
+        {/* Other Sections */}
         <div className="mb-8 md:mb-0">
-          <h2 className="text-2xl font-bold mb-2">Royals WebTech</h2>
+          <h2 className="text-2xl font-bold mb-2">NEXUX</h2>
           <div className="w-36 h-1 border-b-2 border-yellow-400 rounded-md mb-4"></div>
           <div className="space-y-2">
             <a href="/" className="block hover:text-yellow-400 cursor-pointer">About Us</a>
@@ -54,26 +64,26 @@ function Footer() {
       </div>
 
       {/* This will be shown on smaller screens */}
-      <div className="md:hidden pb-6 text-center">
-        <p>Design and Developed by Royals WebTech</p>
+      <div className="md:hidden pb-4 text-center"> {/* Reduced bottom padding */}
+        <p>Design and Developed by NEXUX</p>
       </div>
-      
-      <hr className=''/>
+
+      <hr className='' />
       <div className='hidden md:block'>
-        <div className="footer-end pb-10 pt-5">
+        <div className="footer-end py-4"> {/* Reduced padding */}
           <div className="footer-term">
-            <h4>© Copyright Royals WebTech, 2024</h4>
+            <h4>© 2024  <strong>
+              &#169; <i>NEXUX</i>
+            </strong>. Minerals Pvt Ltd.</h4>
           </div>
           <div className="term footer-term">
             Terms & Conditions | Privacy Policy | Contact Us
           </div>
-
           <div className="term footer-term">
             Design and Developed by{" "}
             <strong>
-              &#169; <i>Royals WebTech</i>
-            </strong>
-            .
+              &#169; <i>NEXUX</i>
+            </strong>.
           </div>
         </div>
       </div>

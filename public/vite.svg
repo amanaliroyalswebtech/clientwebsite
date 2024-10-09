@@ -1,22 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 60">
   <!-- Background Circle -->
   <circle cx="30" cy="30" r="30" fill="#4A90E2" />
   
-  <!-- 'R' Letter -->
-  <text x="18" y="38" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#ffffff">
-    R
+  <!-- 'N' Letter -->
+  <text x="12" y="38" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#ffffff">
+    N
   </text>
 
-  <!-- 'W' Letter -->
+  <!-- 'E' Letter -->
   <text x="70" y="38" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#4A90E2">
-    W
+    E
   </text>
 
-  <!-- 'T' Letter -->
+  <!-- 'X' Letter -->
   <text x="120" y="38" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#4A90E2">
-    T
+    X
+  </text>
+
+  <!-- 'U' Letter -->
+  <text x="170" y="38" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#4A90E2">
+    U
+  </text>
+
+  <!-- 'X' Letter -->
+  <text x="220" y="38" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#4A90E2">
+    X
   </text>
 
   <!-- Underline -->
-  <rect x="15" y="45" width="160" height="5" fill="#4A90E2" />
+  <rect x="10" y="45" width="280" height="5" fill="#4A90E2" />
 </svg>

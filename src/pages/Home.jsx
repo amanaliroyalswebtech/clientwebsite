@@ -1,5 +1,7 @@
 import React from 'react';
-import { FaMoneyBillWave, FaChartLine, FaBullhorn, FaCalculator, FaCheckCircle, FaShoppingCart, FaCogs, FaUsers, FaRocket } from 'react-icons/fa'; // Additional Icons
+import {
+   FaShoppingCart, FaCogs, FaUsers, FaRocket, FaBuilding, FaShoppingBag, FaBoxes,
+    FaUserTie, FaWallet  } from 'react-icons/fa'; // Additional Icons
 import Footer from './Footer';
 import img1 from "/src/assets/logo1.jpg"
 import img2 from "/src/assets/logo2.jpg"
@@ -7,12 +9,12 @@ import img3 from "/src/assets/rwtlogo.png"
 
 const Home = () => {
   const services = [
-    { name: 'Inventory Management System', icon: <FaMoneyBillWave />, link:'https://dharoharvintagestore.com/'},
-    { name: 'Club Management System', icon: <FaCalculator />, link: 'https://sahas-phi.vercel.app/'},
-    { name: 'Petrol Management System', icon: <FaBullhorn />, link: 'https://marwah-petrol-pump.vercel.app/'},
-    { name: 'Hotel Management System', icon: <FaChartLine />, link: 'https://resturant-application-react.vercel.app/1/6'},
-    { name: 'College Management System', icon: <FaCheckCircle />, link: '/src/pages/College.jsx'},
-    { name: 'Vendor Management System', icon: <FaShoppingCart />, link: '/src/pages/Vendor.jsx'},
+    { name: 'Administrative', icon: <FaBuilding />, link: 'https://nexux2.odoo.com/' }, 
+    { name: 'Sales', icon: <FaShoppingCart />, link: 'https://nexux2.odoo.com/' },
+    { name: 'Purchase', icon: <FaShoppingBag />, link: 'https://nexux2.odoo.com/' },
+    { name: 'Inventory', icon: <FaBoxes />, link: 'https://nexux2.odoo.com/' },
+    { name: 'HR', icon: <FaUserTie />, link: 'https://nexux2.odoo.com/' },
+    { name: 'Account', icon: <FaWallet />, link: 'https://nexux2.odoo.com/' }, 
   ];
 
   return (
@@ -27,25 +29,15 @@ const Home = () => {
     </div>
 
     {/* RWT Logo in the center */}
-    <div className="flex justify-center">
-      <img src={img3} alt="Business Platform" className="h-20 w-20 md:h-60 md:w-60 object-contain rounded-md" /> {/* Reduced size */}
-    </div>
-
+    <a href = "https://www.nexuxrise.com/">
+    <div className="flex justify-center" >
+    <img src={img3} alt="Business Platform" className="h-32 w-32 md:h-60 md:w-60 object-contain rounded-md" /> {/* Reduced size */}
+    </div></a>
     {/* Logo2 on the right */}
     <div className="flex justify-end">
       <img src={img2} alt="Logo 2" className="h-12 w-12 md:h-24 md:w-24 object-contain rounded-full" /> {/* Reduced size */}
     </div>
   </div>
-
-  {/* Heading Section */}
-  {/* <div className="flex-grow flex flex-col items-center justify-center text-center z-10 mt-20 md:mt-28">
-    <h1 className="text-4xl p-4 md:text-6xl font-bold text-black fancy-text mb-4 md:mb-6 font-QwitcherGrypen animate-fadeIn">
-      Manage your entire business from a single platform.
-    </h1>
-    <p className="text-lg md:text-2xl text-black fancy-text font-sans animate-fadeIn delay-1s">
-      Simple, effective, and affordable!
-    </p>
-  </div> */}
 </div>
 
 
@@ -106,7 +98,7 @@ const Home = () => {
           <h2 className="text-4xl font-bold mb-4">Ready to Take Your Business to the Next Level?</h2>
           <p className="text-lg mb-8">Get in touch with us and discover how our solutions can help you succeed.</p>
           <button className="bg-white text-indigo-600 py-3 px-6 rounded-lg font-bold hover:bg-gray-200 transition-all duration-300">
-            Contact Us
+           <a href="https://www.nexuxrise.com/"> Contact Us</a>
           </button>
         </div>
       </section>
