@@ -2,7 +2,6 @@ import React from 'react'
 import {
 FaShoppingCart, FaCogs, FaUsers, FaRocket, FaBuilding, FaShoppingBag, FaBoxes,
 FaUserTie, FaWallet  } from 'react-icons/fa'; // Additional Icons
-
 function Content() {
      const services = [
     { name: 'Administrative', icon: <FaBuilding />, link: 'https://nexux2.odoo.com/' }, 
@@ -10,7 +9,7 @@ function Content() {
     { name: 'Purchase', icon: <FaShoppingBag />, link: 'https://nexux2.odoo.com/' },
     { name: 'Inventory', icon: <FaBoxes />, link: 'https://nexux2.odoo.com/' },
     { name: 'HR', icon: <FaUserTie />, link: 'https://nexux2.odoo.com/' },
-    { name: 'Account', icon: <FaWallet />, link: 'account' }, 
+    { name: 'Account', icon: <FaWallet />, link: '/account' }, 
   ];
   return (
     <>
@@ -20,11 +19,12 @@ function Content() {
     <div className="flex justify-center">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8"> {/* Adjusted gap */}
         {services.map((service, index) => (
-          <a 
+  
+      <a
             key={index} 
             href={service.link}  // Add the link to the service
             className="bg-gray-100 rounded-lg shadow-lg p-4 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl animate-fadeIn w-40 flex flex-col justify-center items-center mx-auto" 
-            target="_blank"      // Optional: open link in new tab
+            target=""      // Optional: open link in new tab
             rel="noopener noreferrer"  // Optional: security best practice
           >
             <div className="text-3xl text-indigo-500 mb-1">{service.icon}</div>
