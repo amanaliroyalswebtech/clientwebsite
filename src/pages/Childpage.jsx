@@ -3,8 +3,8 @@ import { FaUserTie, FaWallet,FaCogs, FaUsers, FaRocket,  } from 'react-icons/fa'
 function childpage() {
     const services = [
 
-        { name: 'Accounting', icon: <FaUserTie />, link: 'http://tally.freedns.in.net' },
-        { name: 'Account 2', icon: <FaWallet />, link: 'http://tally.freedns.in.net' }, 
+        { name: 'Pannel Odoo', icon: <FaUserTie />, link: 'http://tally.freedns.in.net' },
+        { name: 'Tally Prime Gold', icon: <FaWallet />, link: 'http://tally.freedns.in.net' }, 
       ];
   return (
    <>
