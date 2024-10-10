@@ -1,14 +1,12 @@
 import React from 'react';
-import rwtlogo from '../assets/rwtlogo.png'; // Adjust path based on your folder structure
+import rwtlogo from '../assets/rwtlogo.png'; 
 
 function Footer() {
   return (
-    <footer className="bg-white text-gray-900"> {/* Change bg-white to cream or pista if needed */}
-      <div className="container mx-auto flex flex-col md:flex-row md:justify-between p-8"> {/* Reduced padding */}
+    <footer className="bg-white text-gray-900"> 
+      <div className="container mx-auto flex flex-col md:flex-row md:justify-between p-8"> 
         
-        {/* Top left with Logo */}
         <div className="mb-8 md:mb-0">
-          {/* Add your logo at the top left */}
           <a href = "https://www.nexuxrise.com/">
           <img src={rwtlogo} alt="RWT Logo" className="w-32 h-auto mb-2" /> </a>
           
@@ -22,7 +20,7 @@ function Footer() {
           </p>
 
 
-          <h2 className='mt-6'>Address</h2> {/* Reduced margin */}
+          <h2 className='mt-6'>Address</h2> 
           <div className="w-16 h-1 border-b-2 border-yellow-400 rounded-md mb-4"></div>
           <p>NEXUX,<br /> KALMANA TALUKA WANI 445304</p>
 
@@ -64,13 +62,13 @@ function Footer() {
       </div>
 
       {/* This will be shown on smaller screens */}
-      <div className="md:hidden pb-4 text-center"> {/* Reduced bottom padding */}
+      <div className="md:hidden pb-4 text-center">
         <p>Design and Developed by NEXUX</p>
       </div>
 
       <hr className='' />
       <div className='hidden md:block'>
-        <div className="footer-end py-4"> {/* Reduced padding */}
+        <div className="footer-end py-4"> 
           <div className="footer-term">
             <h4>© 2024  <strong>
               &#169; <i>NEXUX</i>

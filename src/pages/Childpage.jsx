@@ -3,7 +3,7 @@ import { FaUserTie, FaWallet,FaCogs, FaUsers, FaRocket,  } from 'react-icons/fa'
 function childpage() {
     const services = [
 
-        { name: 'Pannel Odoo', icon: <FaUserTie />, link: 'http://tally.freedns.in.net' },
+        { name: 'Pannel Odoo', icon: <FaUserTie />, link: 'https://nexux2.odoo.com/' },
         { name: 'Tally Prime Gold', icon: <FaWallet />, link: 'http://tally.freedns.in.net' }, 
       ];
   return (
@@ -12,14 +12,14 @@ function childpage() {
   <div className="container mx-auto text-center">
     <h2 className="text-4xl font-bold mb-8 animate-slideIn">Our Services</h2>
     <div className="flex justify-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8"> {/* Adjusted gap */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8"> 
         {services.map((service, index) => (
           <a 
             key={index} 
-            href={service.link}  // Add the link to the service
+            href={service.link}  
             className="bg-gray-100 rounded-lg shadow-lg p-4 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl animate-fadeIn w-40 flex flex-col justify-center items-center mx-auto" 
-            target="_blank"      // Optional: open link in new tab
-            rel="noopener noreferrer"  // Optional: security best practice
+            target="_blank" 
+            rel="noopener noreferrer"
           >
             <div className="text-3xl text-indigo-500 mb-1">{service.icon}</div>
             <h3 className="text-xs md:text-sm font-semibold text-gray-800 mb-1 text-center break-words">{service.name}</h3> {/* Reduced font size and allowed line breaks */}

@@ -1,7 +1,7 @@
 import React from 'react'
 import {
 FaShoppingCart, FaCogs, FaUsers, FaRocket, FaBuilding, FaShoppingBag, FaBoxes,
-FaUserTie, FaWallet  } from 'react-icons/fa'; // Additional Icons
+FaUserTie, FaWallet  } from 'react-icons/fa';
 import {Link} from 'react-router-dom'
 
 function Content() {
@@ -19,15 +19,15 @@ function Content() {
   <div className="container mx-auto text-center">
     <h2 className="text-4xl font-bold mb-8 animate-slideIn">Our Services</h2>
     <div className="flex justify-center">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8"> {/* Adjusted gap */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {services.map((service, index) => (
   
       <Link
             key={index} 
-            to={service.link}  // Add the link to the service
+            to={service.link}  
             className="bg-gray-100 rounded-lg shadow-lg p-4 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl animate-fadeIn w-40 flex flex-col justify-center items-center mx-auto" 
-            target=""      // Optional: open link in new tab
-            rel="noopener noreferrer"  // Optional: security best practice
+            target="" 
+            rel="noopener noreferrer" 
           >
             <div className="text-3xl text-indigo-500 mb-1">{service.icon}</div>
             <h3 className="text-xs md:text-sm font-semibold text-gray-800 mb-1 text-center break-words">{service.name}</h3> {/* Reduced font size and allowed line breaks */}
