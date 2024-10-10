@@ -2,6 +2,8 @@ import React from 'react'
 import {
 FaShoppingCart, FaCogs, FaUsers, FaRocket, FaBuilding, FaShoppingBag, FaBoxes,
 FaUserTie, FaWallet  } from 'react-icons/fa'; // Additional Icons
+import {Link} from 'react-router-dom'
+
 function Content() {
      const services = [
     { name: 'Administrative', icon: <FaBuilding />, link: 'https://nexux2.odoo.com/' }, 
@@ -20,16 +22,16 @@ function Content() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8"> {/* Adjusted gap */}
         {services.map((service, index) => (
   
-      <a
+      <Link
             key={index} 
-            href={service.link}  // Add the link to the service
+            to={service.link}  // Add the link to the service
             className="bg-gray-100 rounded-lg shadow-lg p-4 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl animate-fadeIn w-40 flex flex-col justify-center items-center mx-auto" 
             target=""      // Optional: open link in new tab
             rel="noopener noreferrer"  // Optional: security best practice
           >
             <div className="text-3xl text-indigo-500 mb-1">{service.icon}</div>
             <h3 className="text-xs md:text-sm font-semibold text-gray-800 mb-1 text-center break-words">{service.name}</h3> {/* Reduced font size and allowed line breaks */}
-          </a>
+          </Link>
         ))}
       </div>
     </div>
